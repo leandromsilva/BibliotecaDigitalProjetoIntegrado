@@ -12,11 +12,12 @@ class _DownloadsPageState extends State<DownloadsPage> {
         padding: EdgeInsets.all(10.0),
         child: Column(
           children: [
-            Row(
-              children: [
-                Icon(Icons.book),
-              ],
-            )
+            Card(
+                child: ListTile(
+                    title: Text('Exemplo'), leading: Icon(Icons.book))),
+            Card(
+                child: ListTile(
+                    title: Text('Exemplo'), leading: Icon(Icons.book))),
           ],
         ));
   }
