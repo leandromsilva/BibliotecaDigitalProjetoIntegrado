@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "181451762084",
+    "firebase_url": "https://biblioteca-digital-brasileira.firebaseio.com",
+    "project_id": "biblioteca-digital-brasileira",
+    "storage_bucket": "biblioteca-digital-brasileira.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181451762084:android:33700e981eb2100babb931",
+        "android_client_info": {
+          "package_name": "com.example.biblioteca_digital_brasileira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181451762084-d901ptk6h9si0giborvnss0bjo6ul0p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh9XxJdGzfg4KFbUsGnKuObvKTBxZExSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181451762084-d901ptk6h9si0giborvnss0bjo6ul0p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
