@@ -8,7 +8,7 @@ Widget createBookTable(BuildContext context, AsyncSnapshot snapshot) {
       itemCount: 16,
       itemBuilder: (context, index) {
         return GestureDetector(
-          child: Container(color: Colors.grey),
+          child: Container(height: 10.0, width: 20.0, color: Colors.grey),
         );
       });
 }
