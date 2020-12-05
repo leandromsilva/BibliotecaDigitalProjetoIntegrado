@@ -1,13 +1,12 @@
-import 'package:biblioteca_digital_brasileira/pages/register_page.dart';
-import 'package:biblioteca_digital_brasileira/widgets/principal_widget.dart';
+import 'package:biblioteca_digital_brasileira/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
+class RegisterPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _RegisterPageState createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Icon(
-                Icons.book,
+                Icons.person,
                 size: 150,
               ),
               TextField(
@@ -34,23 +33,13 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 20),
               RaisedButton(
                   child: Text(
-                    'Login',
+                    'Efetuar cadastro',
                     style: TextStyle(color: Colors.white),
                   ),
                   color: Colors.green,
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => HomeWidget()));
-                  }),
-              RaisedButton(
-                  child: Text(
-                    'Cadastro',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  color: Colors.green,
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => RegisterPage()));
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => LoginPage()));
                   }),
             ],
           ),

@@ -1,3 +1,5 @@
+import 'package:biblioteca_digital_brasileira/tile/category_tile.dart';
+import 'package:biblioteca_digital_brasileira/widgets/book_list_widget.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatefulWidget {
@@ -11,23 +13,16 @@ class _CategoryPageState extends State<CategoryPage> {
     return Container(
       child: Column(
         children: [
-          Card(
-              child: ListTile(
-            title: Text('Português'),
-            leading: Icon(Icons.book),
-          )),
-          Card(
-              child: ListTile(
-                  title: Text('Matemática'), leading: Icon(Icons.calculate))),
-          Card(
-              child: ListTile(
-                  title: Text('Física'), leading: Icon(Icons.calculate))),
-          Card(
-              child:
-                  ListTile(title: Text('História'), leading: Icon(Icons.book))),
-          Card(
-              child: ListTile(
-                  title: Text('Literatura'), leading: Icon(Icons.book))),
+          CategoryTile(name: 'Português', icon: Icons.book),
+          //  Expanded(child: createBookList(context)),
+          CategoryTile(name: 'Matemática', icon: Icons.calculate),
+          //  Expanded(child: createBookList(context)),
+          CategoryTile(name: 'Física', icon: Icons.calculate),
+          //  Expanded(child: createBookList(context)),
+          CategoryTile(name: 'História', icon: Icons.book),
+          //  Expanded(child: createBookList(context)),
+          CategoryTile(name: 'Literatura', icon: Icons.book),
+          //  Expanded(child: createBookList(context)),
         ],
       ),
     );

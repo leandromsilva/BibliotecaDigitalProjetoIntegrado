@@ -1,14 +1,12 @@
+import 'package:biblioteca_digital_brasileira/tile/book_tile.dart';
 import 'package:flutter/material.dart';
 
 Widget createBookTable(BuildContext context, AsyncSnapshot snapshot) {
   return GridView.builder(
-      padding: EdgeInsets.all(10.0),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3, crossAxisSpacing: 20.0, mainAxisSpacing: 20.0),
+          crossAxisCount: 3, crossAxisSpacing: 10.0, mainAxisSpacing: 10.0),
       itemCount: 16,
       itemBuilder: (context, index) {
-        return GestureDetector(
-          child: Container(height: 10.0, width: 20.0, color: Colors.grey),
-        );
+        return BookTile();
       });
 }

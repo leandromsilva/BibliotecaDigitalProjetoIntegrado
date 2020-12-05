@@ -17,9 +17,8 @@ class _MyHomePageState extends State<HomeWidget> {
 
   final _label = [
     'Destaques',
-    'Materiais Baixados',
-    'Pesquisar por Categoria',
-    'Pesquisar por Nome',
+    'Materiais baixados',
+    'Pesquisar por categoria',
   ];
 
   final _pages = [
