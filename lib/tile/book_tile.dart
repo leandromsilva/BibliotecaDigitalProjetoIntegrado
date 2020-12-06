@@ -1,4 +1,4 @@
-import 'package:biblioteca_digital_brasileira/widgets/alert_dialog.dart';
+import 'package:biblioteca_digital_brasileira/widgets/book_dialog.dart';
 import 'package:flutter/material.dart';
 
 class BookTile extends StatelessWidget {
@@ -13,7 +13,7 @@ class BookTile extends StatelessWidget {
         ),
       ),
       onTap: () {
-        myDialog(context);
+        bookDialog(context);
       },
     );
   }

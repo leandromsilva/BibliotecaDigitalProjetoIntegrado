@@ -1,3 +1,4 @@
+import 'package:biblioteca_digital_brasileira/widgets/category_dialog.dart';
 import 'package:flutter/material.dart';
 
 class CategoryTile extends StatelessWidget {
@@ -8,10 +9,15 @@ class CategoryTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: ListTile(
-      title: Text(name),
-      leading: Icon(icon),
-    ));
+    return GestureDetector(
+      child: Card(
+          child: ListTile(
+        title: Text(name),
+        leading: Icon(icon),
+      )),
+      onTap: () {
+        categoryDialog(context, name);
+      },
+    );
   }
 }

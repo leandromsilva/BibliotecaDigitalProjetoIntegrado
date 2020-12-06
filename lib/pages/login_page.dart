@@ -1,5 +1,5 @@
 import 'package:biblioteca_digital_brasileira/pages/register_page.dart';
-import 'package:biblioteca_digital_brasileira/widgets/principal_widget.dart';
+import 'package:biblioteca_digital_brasileira/pages/principal_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {

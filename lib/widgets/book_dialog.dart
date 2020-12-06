@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Future<void> myDialog(context) async {
+Future<void> bookDialog(context) async {
   return showDialog<void>(
     context: context,
     builder: (BuildContext context) {
