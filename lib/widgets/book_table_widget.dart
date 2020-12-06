@@ -5,7 +5,7 @@ Widget createBookTable(BuildContext context, AsyncSnapshot snapshot) {
   return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3, crossAxisSpacing: 10.0, mainAxisSpacing: 10.0),
-      itemCount: 16,
+      itemCount: 14,
       itemBuilder: (context, index) {
         return BookTile();
       });

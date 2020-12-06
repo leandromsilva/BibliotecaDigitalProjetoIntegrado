@@ -7,10 +7,14 @@ Future<void> categoryDialog(context, String name) async {
     builder: (BuildContext context) {
       return AlertDialog(
         title: Text(name),
-        content: FutureBuilder(
-          builder: (context, snapshot) {
-            return createBookTable(context, snapshot);
-          },
+        content: Container(
+          width: 500,
+          height: 700,
+          child: FutureBuilder(
+            builder: (context, snapshot) {
+              return createBookTable(context, snapshot);
+            },
+          ),
         ),
         actions: [
           TextButton(
