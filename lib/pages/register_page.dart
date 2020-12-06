@@ -38,8 +38,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   color: Colors.green,
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => LoginPage()));
+                    Navigator.of(context).pop();
                   }),
             ],
           ),
